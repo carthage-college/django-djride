@@ -13,19 +13,8 @@ urlpatterns = [
     url(
         r'^admin/', include(admin.site.urls)
     ),
-    # my app
+    # shuttle tracker
     url(
-        r'^myapp/', include('djskeletor.myapp.urls')
-    ),
-    # direct to template
-    url(
-        r'^success/$',
-        TemplateView.as_view(
-            template_name='myapp/success.html'
-        )
-    ),
-    # redirect
-    url(
-        r'^$', RedirectView.as_view(url='/foobar/')
+        r'^shuttle/', include('djride.shuttle.urls')
     ),
 ]
