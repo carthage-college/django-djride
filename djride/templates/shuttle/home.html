@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}
+    Shuttle Tracker &mdash; LIS &mdash; Carthage College
+{% endblock %}
+{% block page-content-wrap %}
+<div id="page-content" class="site-width cf">
+  <!--START:Content-->
+  <div class="content large-12">
+    <div id="main-page-section" class="intro-paragraph cf">
+      <h1>Shuttle Map</h1>
+    </div>
+    <!--START: Map-->
+    <div id="main-content">
+      <div class="column-container cf">
+        <div class="column large-8 medium-8 small-12" style="clear: both;">
+            <div id="shuttle-map" style="height: 400px;"></div>
+        </div>
+        <!-- /.column map -->
+        <div class="column large-4 medium-4 small-12">
+          <h3 style="margin-bottom: 2px;">
+            <a href="/library/hedberg">Information Column</a>
+          </h3>
+          <p>
+            blah blah blah
+          </p>
+        </div>
+        <!-- /.column information-->
+      </div>
+      <!-- /.column-container-->
+    </div>
+    <!--/#main-content -->
+  </div>
+  <!-- /.content-->
+</div>
+<!-- /#page-content -->
+{% endblock %}
