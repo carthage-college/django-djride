@@ -52,6 +52,7 @@ coverage.xml
 
 # Django stuff:
 *.log
+shell.py
 local.py
 development.py
 staging.py
